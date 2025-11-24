@@ -7,14 +7,13 @@ Prerequisites
 
 Create & activate virtual environment (PowerShell)
 ```
-Set-Location 'C:\Users\1999j\4'
+
 python -m venv .venv
 .\.venv\Scripts\Activate
 ```
 
-Install requirements (already done if you used the provided `.venv`):
+Install requirements:
 ```
-python -m pip install --upgrade pip
 pip install -r requirements.txt
 ```
 
@@ -29,3 +28,4 @@ Notes
 - A frozen copy of installed packages is saved as `requirements-lock.txt`.
 - If you have issues with mDNS (`esp32-haptic.local`), use the ESP32 IP address in `VIBRATION_HOST`.
 - Keep `.venv` activated while running the script so the installed packages are used.
+
